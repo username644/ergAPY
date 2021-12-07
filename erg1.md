@@ -90,6 +90,8 @@ build/ARM/gem5.opt configs/example/se.py --cpu-type=MinorCPU --cpu-clock=3GHz --
 build/ARM/gem5.opt configs/example/se.py --cpu-type=TimingSimpleCPU --cpu-clock=3GHz --cmd=my prog
 build/ARM/gem5.opt configs/example/se.py --cpu-type=TimingSimpleCPU --cpu-clock=0,6GHz --cmd=my prog
 
+Παρατηρούμε ότι ο MinorCPU έχει μεγαλύτερη ευαισθησία στην αλλαγή συχνότητας λειτουργίας. Αυτό συμβαίνει αφού ο TimingSimpleCPU σταματά στις προσβάσεις των cache και περιμένει να ανταποκριθεί το σύστημα μνήμης πριν προχωρήσει, σε αντίθεση με τον MinorCPU που είναι ένας in-order επεξεργαστής. 
+
 ### ii
 
 Timing Simple 
