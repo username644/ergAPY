@@ -85,7 +85,11 @@ sim_ticks                                    48411000
 
 ## b
 ### i
-> Όμοια με την άσκηση 1 δεν μπορέσαμε να διακρίνουμε κάποια διαφορά στο stats.txt αλλάζοντας την συχνότητα
+
+build/ARM/gem5.opt configs/example/se.py --cpu-type=MinorCPU --cpu-clock=3GHz --caches --cmd=my prog
+build/ARM/gem5.opt configs/example/se.py --cpu-type=TimingSimpleCPU --cpu-clock=3GHz --cmd=my prog
+build/ARM/gem5.opt configs/example/se.py --cpu-type=TimingSimpleCPU --cpu-clock=0,6GHz --cmd=my prog
+
 ### ii
 
 Timing Simple 
